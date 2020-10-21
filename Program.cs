@@ -10,6 +10,19 @@ namespace LineComaparision
             double temp2 = GetEndPointsOfY();
             double result1 = DistanceBtwnPoints(temp1, temp2);
             Console.WriteLine("Distance between two points: " + result1);
+            double temp3 = GetEndPointsOfX();
+            double temp4 = GetEndPointsOfY();
+            double result2 = DistanceBtwnPoints(temp3, temp4);
+            Console.WriteLine("Distance between two points: " + result2);
+            bool checkLines = result1.Equals(result2);
+            if ( checkLines == true)
+            {
+                Console.WriteLine("Both lines are equal");
+            }
+            else
+            {
+                Console.WriteLine("lines are not equal");
+            }
 
         }
 
